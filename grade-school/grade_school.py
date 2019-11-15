@@ -1,12 +1,12 @@
 class School:
     def __init__(self):
-        pass
+        self.students = {}
 
     def add_student(self, name, grade):
-        pass
+        self.students[name]=grade
 
     def roster(self):
-        pass
+        return [x[0] for x in sorted(self.students.items(), key = lambda kv:(kv[1], kv[0]))]
 
     def grade(self, grade_number):
-        pass
+        return sorted([student for student in self.students if self.students[student] == grade_number])
