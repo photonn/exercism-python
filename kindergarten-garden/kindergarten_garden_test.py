@@ -61,7 +61,7 @@ class KindergartenGardenTest(unittest.TestCase):
             "VCRRGVRG\nRVGCCGCV", students=["Samantha", "Patricia", "Xander", "Roger"]
         )
         self.assertEqual(
-            garden.plants("Samantha"), ["Violets", "Clover", "Radishes", "Violets"]
+            garden.plants("Patricia"), ["Violets", "Clover", "Radishes", "Violets"]
         )
 
     def test_students_are_unordered_last_student(self):
@@ -69,7 +69,7 @@ class KindergartenGardenTest(unittest.TestCase):
             "VCRRGVRG\nRVGCCGCV", students=["Samantha", "Patricia", "Xander", "Roger"]
         )
         self.assertEqual(
-            garden.plants("Roger"), ["Radishes", "Grass", "Clover", "Violets"]
+            garden.plants("Xander"), ["Radishes", "Grass", "Clover", "Violets"]
         )
 
 
