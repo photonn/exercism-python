@@ -4,6 +4,7 @@ class Garden:
     "Eve", "Fred", "Ginny", "Harriet",
     "Ileana", "Joseph", "Kincaid", "Larry"]):
         self.students = students
+        self.students.sort()
         self.diagram = diagram.split("\n")
     
     def plants(self, string):
